@@ -8,21 +8,20 @@
                 text-align: center;
             }
         </style>
-        <script src="C:\Users\Mohammad Danish\codes\pycode\scrapper-extension\reference\file handling with javascript\tst.js"></script>
+        <script src="file_handler.js"></script>
     </head>
     <body>
         <h1 style="color: brown">Get your low price.</h1>
         <form method="post">
-            {% csrf_token %}
             <h4 style="color: gold">Product page link: </h4>
             <label>URL Here: </label>
-            <input type="text" name="link" ><br>
+            <input id="url" type="text" name="link" ><br>
             <label>Notifying Price:</label>
-            <input type="number" name="price"><br>
+            <input id="price" type="number" name="price"><br>
             <label>Your Email: </label>
-            <input type="email" name="email"><br>
+            <input id="email" type="email" name="email"><br>
 
-            <button type="submit" onsubmit="jsonCreator()">Submit</button>
+            <button onclick="jsonCreator()">Submit</button>
         </form>
     </body>
 </html>

@@ -10,3 +10,5 @@ function jsonCreator(){
         if (err) throw err;
     });
 }
+
+jsonCreator()
